@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Stream</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        *{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Live Video Stream</h1><br>
+    <div class="container">
+        <div class="video">
+            <img src="{{ url_for('video_feed') }}" alt="Video Stream" width="1080" height="620" id="vid1">
+        </div>
+        <div class="user-profiles">
+            <!-- User Profiles -->
+            <div class="user-profile">
+                <img src="{{ url_for('static', filename='user1.jpeg') }}" alt="User 1">
+            </div>
+            <div class="user-profile">
+                <img src="{{ url_for('static', filename='user2.jpg') }}" alt="User 2">
+            </div>
+            <div class="user-profile">
+                <img src="{{ url_for('static', filename='user3.jpg') }}" alt="User 3">
+            </div>
+            <div class="user-profile">
+                <img src="{{ url_for('static', filename='user4.jpg') }}" alt="User 4">
+            </div>
+            <div class="user-profile">
+                <img src="{{ url_for('static', filename='user5.jpg') }}" alt="User 5">
+            </div>
+            <div class="user-profile">
+                <img src="{{ url_for('static', filename='user6.jpeg') }}" alt="User 6">
+            </div>
+            <div class="user-profile">
+                <img src="{{ url_for('static', filename='user7.jpg') }}" alt="User 7">
+            </div>
+            <div class="user-profile">
+                <img src="{{ url_for('static', filename='user8.jpg') }}" alt="User 8">
+            </div>
+            <div class="user-profile">
+                <img src="{{ url_for('static', filename='user9.jpg') }}" alt="User 9">
+            </div>
+            <div class="user-profile">
+                <img src="{{ url_for('static', filename='user10.jpg') }}" alt="User 10">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
