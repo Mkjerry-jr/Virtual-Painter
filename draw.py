@@ -219,8 +219,8 @@ class HandsDetection():
     
 
 @app.route('/')
-def index():
-    return render_template('index.html')
+def home():
+    return render_template('main.html')
                 
 def generate_frames():
     global count_frames, current_brush_size_index
@@ -284,8 +284,14 @@ def generate_frames():
 @app.route('/video_feed')
 def video_feed():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+@app.route('/index')
 def index():
     return render_template('index.html')
+
+@app.route('/user')
+def user():
+    return render_template('user.html')
 
 
 if __name__ == '__main__':
